@@ -29,8 +29,8 @@ const Navbar = () => {
             <Link href="/about" className="cursor-pointer">
               About me
             </Link>
-            <Link href="/" className="cursor-pointer">
-              Skills
+            <Link href="/github" className="cursor-pointer">
+              GitHub
             </Link>
             <Link href="/projects" className="cursor-pointer">
               Projects

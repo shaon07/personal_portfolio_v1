@@ -1,0 +1,32 @@
+"use client";
+import React from "react";
+import { PinContainer } from "../ui/3d-pin";
+
+type AnimatedPinDemo = {
+    title?: string;
+    link?: string;
+    github?: string;
+}
+
+export function AnimatedPinDemo({title, link, github}:AnimatedPinDemo) {
+  return (
+    <div className="mb-4 w-full flex items-center justify-center ">
+      <PinContainer
+        title={link}
+        href={github}
+      >
+        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+          <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+            {title}
+          </h3>
+          <div className="text-base !m-0 !p-0 font-normal">
+            <span className="text-slate-500 ">
+            See all the public projects I have worked on
+            </span>
+          </div>
+          <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+        </div>
+      </PinContainer>
+    </div>
+  );
+}
